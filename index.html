@@ -10,17 +10,24 @@
         h1 {
             color: blue;
         }
-        #food-title{
+
+        #food-title {
             color: green;
+        }
+
+        .food .foreign {
+            font-weight: 700;
         }
     </style>
 </head>
 
 <body>
-    <section>
+    <section id="old-dhaka" class="songs">
         <header>
             <h1>This is my header no banner</h1>
         </header>
+        <p>Lorem ipsum dolor sit amet, <Span>Oli goli</Span> adipisicing elit. Repellat atque voluptate inventore eligendi
+            suscipit numquam eaque <span>illo</span> dolorum provident omnis?</p>
         <main>
             <h1>Welcome to my DOM</h1>
             <ul>
@@ -32,7 +39,7 @@
             </ul>
     </section>
 
-    <section>
+    <section class="food">
         <h1 id="food-title">Foods I love </h1>
 
         <ul>
@@ -86,7 +93,7 @@
 
         // get elements my class name 
         const foreignElements = document.getElementsByClassName('foreign')
-        for(const foreign of foreignElements){
+        for (const foreign of foreignElements) {
             console.log(foreign.innerText)
 
         }
