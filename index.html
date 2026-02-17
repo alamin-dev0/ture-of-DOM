@@ -18,6 +18,18 @@
         .food .foreign {
             font-weight: 700;
         }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bold {
+            font-weight: 900;
+        }
+
+        .big {
+            font-size: 3em;
+        }
     </style>
 </head>
 
@@ -26,7 +38,8 @@
         <header>
             <h1>This is my header no banner</h1>
         </header>
-        <p>Lorem ipsum dolor sit amet, <span>Oli goli</span> adipisicing elit. Repellat atque voluptate inventore eligendi
+        <p>Lorem ipsum dolor sit amet, <span>Oli goli</span> adipisicing elit. Repellat atque voluptate inventore
+            eligendi
             suscipit numquam eaque <span>Aillo</span> dolorum provident omnis?</p>
         <main>
             <h1>Welcome to my DOM</h1>
@@ -50,6 +63,19 @@
             <li class="foreign">Burger</li>
             <li class="foreign">Pizza</li>
             <li class="foreign">Pasta</li>
+        </ul>
+    </section>
+
+
+
+    <section id="Players-container">
+        <h1>Players</h1>
+        <ul>
+            <li>Messi</li>
+            <li>Pele</li>
+            <li>Ronaldo</li>
+            <li>Embape</li>
+            <!-- <li>chele</li> -->
         </ul>
     </section>
     </main>
@@ -81,11 +107,11 @@
 
 
         const foodTitleH1 = document.getElementById('food-title')
-        console.log(foodTitleH1.innerText)
+        // console.log(foodTitleH1.innerText)
         foodTitleH1.innerText = 'Food i loved to eat'
 
         const bandElement = document.getElementById('band')
-        console.log(bandElement.innerText)
+        // console.log(bandElement.innerText)
         bandElement.innerText = 'This is Jalali Set band'
 
 
@@ -94,7 +120,7 @@
         // get elements my class name 
         const foreignElements = document.getElementsByClassName('foreign')
         for (const foreign of foreignElements) {
-            console.log(foreign.innerText)
+            // console.log(foreign.innerText)
 
         }
 
@@ -103,11 +129,12 @@
         // queary selector all 
 
         const spanElement = document.querySelectorAll('#old-dhaka p span')
-        for(const span of spanElement){
-            console.log(span.innerText)
+        for (const span of spanElement) {
+            // console.log(span.innerText)
         }
     </script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/cssInJs.js"></script>
 </body>
 
 </html>
