@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOm</title>
     <link rel="stylesheet" href="./style/style.css">
     <style>
-        h1{
+        h1 {
             color: blue;
+        }
+        #food-title{
+            color: green;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>This is my header no banner</h1>
-    </header>
-    <main>
-        <h1>Welcome to my DOM</h1>
+    <section>
+        <header>
+            <h1>This is my header no banner</h1>
+        </header>
+        <main>
+            <h1>Welcome to my DOM</h1>
+            <ul>
+                <li class="others">Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band">Jalali Set</li>
+                <li class="international">Dobai</li>
+                <li class="others">Dom Dere baba</li>
+            </ul>
+    </section>
+
+    <section>
+        <h1 id="food-title">Foods I love </h1>
+
         <ul>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
-            <li>Jalali Set</li>
-            <li>Dom Dere baba</li>
+            <li>Rice </li>
+            <li>Potato</li>
+            <li>Kacchi</li>
+            <li>Lentils</li>
+            <li class="foreign">Burger</li>
+            <li class="foreign">Pizza</li>
+            <li class="foreign">Pasta</li>
         </ul>
+    </section>
     </main>
 
     <script>
@@ -30,26 +52,46 @@
         // console.log('Hello bole cole gelo')
         // console.log('Document Object Model')
         const student = {
-            name : 'Abul mia',
+            name: 'Abul mia',
             id: 121,
-            study:function(subject){
-                console.log('Studying Subject ', subject)
+            study: function (subject) {
+                // console.log('Studying Subject ', subject)
             }
         }
         // document.getElementsByTagName
         const liCollection = document.getElementsByTagName('li')
         // console.log(liCollection)
-        for(const li of liCollection){
-            console.log(li.innerText)
+        for (const li of liCollection) {
+            // console.log(li.innerText)
         }
 
 
         // all h1 tags 
         const allHeading = document.getElementsByTagName('h1')
-        for (const heading of allHeading){
-            console.log(heading.innerText)
+        for (const heading of allHeading) {
+            // console.log(heading.innerText)
+        }
+
+
+        const foodTitleH1 = document.getElementById('food-title')
+        console.log(foodTitleH1.innerText)
+        foodTitleH1.innerText = 'Food i loved to eat'
+
+        const bandElement = document.getElementById('band')
+        console.log(bandElement.innerText)
+        bandElement.innerText = 'This is Jalali Set band'
+
+
+
+
+        // get elements my class name 
+        const foreignElements = document.getElementsByClassName('foreign')
+        for(const foreign of foreignElements){
+            console.log(foreign.innerText)
+
         }
     </script>
     <script src="./js/scripts.js"></script>
 </body>
+
 </html>
