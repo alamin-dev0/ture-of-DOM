@@ -21,12 +21,34 @@
             <li>Shafayet</li>
             <li>Bonobash</li>
             <li>Jalali Set</li>
+            <li>Dom Dere baba</li>
         </ul>
     </main>
 
     <script>
-        console.log('Hello from JavaScripts')
-        console.log('Hello bole cole gelo')
+        // console.log('Hello from JavaScripts')
+        // console.log('Hello bole cole gelo')
+        // console.log('Document Object Model')
+        const student = {
+            name : 'Abul mia',
+            id: 121,
+            study:function(subject){
+                console.log('Studying Subject ', subject)
+            }
+        }
+        // document.getElementsByTagName
+        const liCollection = document.getElementsByTagName('li')
+        // console.log(liCollection)
+        for(const li of liCollection){
+            console.log(li.innerText)
+        }
+
+
+        // all h1 tags 
+        const allHeading = document.getElementsByTagName('h1')
+        for (const heading of allHeading){
+            console.log(heading.innerText)
+        }
     </script>
     <script src="./js/scripts.js"></script>
 </body>
