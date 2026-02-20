@@ -12,6 +12,7 @@ const sections = document.querySelectorAll('section')
 
 
 
+
 // dynamic class
 for(const section of sections ){
     section.classList.add('section-cart')
